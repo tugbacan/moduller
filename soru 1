@@ -1,0 +1,37 @@
+def gelirHesapla(kiraGeliri,urunGeliri,finansmanGeliri):
+    global gelir
+    gelir=kiraGeliri+urunGeliri+finansmanGeliri
+    return gelir
+def giderHesapla(kiraGideri,calisanMaaslari,bakimMaliyeti):
+    global gider
+    gider=kiraGideri+calisanMaaslari+baakimMaliyeti
+    return gider
+def karHesapla(gelir,gider):
+    kar=gelir-gider
+    print(kar)
+
+kiraGideri=int(input("kira giderini giriniz:"))
+urunGeliri=int(input("ürün gelirini giriniz:"))
+finansmanGelir=int(input("Finansman gelirini giriniz:"))
+kiraGideri=int(input("kira giderini giriniz:"))
+calisanMaaslari=int(input("calışan maaşlarını giriniz:"))
+bakimMaliyeti=int(input("Bakım maliyetini giriniz:"))
+
+karHesapla(gelir,gider)
+
+def adamBasiCiro(x,y):
+    adamBasi=(x/y)
+    print("Adambaşı ciro:",adamBasi)
+
+x=int(input("toplam ciroyu giriniz:"))
+y=int(İnput("toplam çalışan sayısını giriniz:"))
+
+adamBasiCiro(x,y)
+
+
+###modulun cagırılması
+
+modul1.adamBasiCiro(x,y)
+modul1.gelirHesapla(kiraGelir,urunGeliri,finansmanGeliri)
+modul1.giderHesapla(kiraGideri,calisanMaaslari,bakimMaliyeti)
+modul1.karHesapla(gelir,gider)
